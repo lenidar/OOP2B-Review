@@ -51,13 +51,14 @@ namespace OOP2B_Review
         static void DivNum(int x, int y)
         {
             int quo = 0;
+            Console.Write($"{x} / {y} = ");
 
-            while(x > y)
+            while (x > y)
             {
                 x = SubNums(x, y);
             }
 
-            Console.WriteLine($"{x} / {y} = {quo} r {x}");
+            Console.WriteLine($"{quo} r {x}");
         }
     }
 }
